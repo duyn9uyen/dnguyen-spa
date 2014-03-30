@@ -1,0 +1,7 @@
+C:\Projects\Captech\Dnguyen-SPA\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Projects\Captech\Dnguyen-SPA\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Projects\Captech\Dnguyen-SPA\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Projects\Captech\Dnguyen-SPA\UnitTestProject\bin\Debug\Services.dll
+C:\Projects\Captech\Dnguyen-SPA\UnitTestProject\bin\Debug\Services.pdb
+C:\Projects\Captech\Dnguyen-SPA\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Projects\Captech\Dnguyen-SPA\UnitTestProject\obj\Debug\UnitTestProject.pdb
