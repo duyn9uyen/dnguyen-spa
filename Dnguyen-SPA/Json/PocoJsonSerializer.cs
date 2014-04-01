@@ -9,17 +9,17 @@ namespace Dnguyen_SPA.Json
 {
     public static class PocoJsonSerializer
     {
-        public static P BuildPocoFromJson<P>(string json)
+        public static T BuildPocoFromJson<T>(string json)
         {
             JavaScriptSerializer jss = new JavaScriptSerializer();
-            var poco = jss.Deserialize<P>(json);
+            var poco = jss.Deserialize<T>(json);
             return poco;
         }
 
-        public static List<P> BuildListOfPocosFromJson<P>(string json)
+        public static List<T> BuildListOfPocosFromJson<T>(string json)
         {
             JavaScriptSerializer jss = new JavaScriptSerializer();
-            var poco = jss.Deserialize<List<P>>(json);
+            var poco = jss.Deserialize<List<T>>(json);
             return poco;
         }
 

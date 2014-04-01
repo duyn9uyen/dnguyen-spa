@@ -1,4 +1,3 @@
-C:\Projects\Captech\Dnguyen-SPA\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Projects\Captech\Dnguyen-SPA\Services\bin\Debug\Services.dll
 C:\Projects\Captech\Dnguyen-SPA\Services\bin\Debug\Services.pdb
 C:\Projects\Captech\Dnguyen-SPA\Services\obj\Debug\Services.dll
