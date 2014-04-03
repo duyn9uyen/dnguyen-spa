@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dnguyen-SPA", "Dnguyen-SPA\Dnguyen-SPA.csproj", "{75BCF1E5-034E-42D5-8939-AC31A357E7EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles.Web", "Articles.Web\Articles.Web.csproj", "{5D9CA10D-AE09-40F9-8DD9-CFBE7BEB914F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{F7F6C2BE-F061-4C1B-836E-88BC39EE25B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{98D8EE2B-90DF-48CB-800C-092CE6F83AD1}"
@@ -19,10 +17,6 @@ Global
 		{75BCF1E5-034E-42D5-8939-AC31A357E7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75BCF1E5-034E-42D5-8939-AC31A357E7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75BCF1E5-034E-42D5-8939-AC31A357E7EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D9CA10D-AE09-40F9-8DD9-CFBE7BEB914F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D9CA10D-AE09-40F9-8DD9-CFBE7BEB914F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D9CA10D-AE09-40F9-8DD9-CFBE7BEB914F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D9CA10D-AE09-40F9-8DD9-CFBE7BEB914F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7F6C2BE-F061-4C1B-836E-88BC39EE25B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7F6C2BE-F061-4C1B-836E-88BC39EE25B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7F6C2BE-F061-4C1B-836E-88BC39EE25B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
