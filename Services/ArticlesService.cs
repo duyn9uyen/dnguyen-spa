@@ -57,8 +57,7 @@ namespace Services
                 }
                 catch (WebException ex)
                 {
-                    var statusCode = ((HttpWebResponse)ex.Response).StatusCode;
-                    return "An error occurred, status code: " + statusCode;
+                    throw;
                 }
 
                 return jsonResponse;

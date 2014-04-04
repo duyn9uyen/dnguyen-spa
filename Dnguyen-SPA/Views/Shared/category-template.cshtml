@@ -1,0 +1,22 @@
+﻿<!--    We are using underscore.js templating
+        http://underscorejs.org/#template     
+-->
+
+<!--    Template functions can both interpolate variables, using <%= … %>, 
+        as well as execute arbitrary JavaScript code, with <% … %>. 
+        If you wish to interpolate a value, and have it be HTML-escaped, use <%- … %>
+-->
+
+
+  <!--This renders the Category Menus from the client-model-->
+<script type="text/template" id="category-template">
+
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <% _.each(fetched_categories, function(category)  { %>
+                <li><a href="#"><%= category.displayName %></a></li>
+            <% }); %>
+        </ul>
+    </div>
+
+</script>

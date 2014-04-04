@@ -28,6 +28,19 @@ namespace Dnguyen_SPA.App_Start
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/bootstrap*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/underscore").Include(
+                        "~/Scripts/underscore*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/backbone").Include(
+                        "~/Scripts/backbone*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/clientSideMVC").Include(
+                    "~/Scripts/models/*.js",
+                    "~/Scripts/views/*.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/site.js").Include(
+                    "~/Scripts/_site.js"));
+
             #endregion
 
             #region Styles
