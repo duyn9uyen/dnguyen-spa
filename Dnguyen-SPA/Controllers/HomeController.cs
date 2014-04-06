@@ -23,8 +23,11 @@ namespace Dnguyen_SPA.Controllers
             model.Articles = GetAllArticles();
             model.FeaturedArticles = GetFeaturedArticles();
             model.Banners = GetAllBanners();
-
+            // Do don't actually do anything with view model data.
+            // Leaving in for debugging connection to services.
             return View(model);
+
+            //return View();
         }
 
         private List<Category> GetAllCategories()

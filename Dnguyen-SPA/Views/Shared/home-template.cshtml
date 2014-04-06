@@ -1,0 +1,21 @@
+﻿<!--    We are using underscore.js templating
+        http://underscorejs.org/#template     
+-->
+
+<!--    Template functions can both interpolate variables, using <%= … %>, 
+        as well as execute arbitrary JavaScript code, with <% … %>. 
+        If you wish to interpolate a value, and have it be HTML-escaped, use <%- … %>
+-->
+
+
+<script type="text/template" id="home-template">
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <p>This is from the: home-template</p>
+            <% //debugger; %>
+            <% _.each(fetched_content, function(content)  { %>
+                <li><%= content.headLine %></li>
+            <% }); %>
+        </ul>
+    </div>
+</script>

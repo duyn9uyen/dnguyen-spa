@@ -2,6 +2,6 @@
 
 $(function () {
 
-    var category_View = new CategoryView();
+    //var category_View = new CategoryView();
 
 });

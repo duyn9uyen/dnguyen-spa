@@ -11,32 +11,33 @@ namespace Dnguyen_SPA.App_Start
             #region Scripts
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/ref/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                        "~/Scripts/jquery-ui-{version}.js"));
+                        "~/Scripts/ref/jquery-ui-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.unobtrusive*",
-                        "~/Scripts/jquery.validate*"));
+                        "~/Scripts/ref/jquery.unobtrusive*",
+                        "~/Scripts/ref/jquery.validate*"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                        "~/Scripts/ref/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                        "~/Scripts/bootstrap*"));
+                        "~/Scripts/ref/bootstrap*"));
 
             bundles.Add(new ScriptBundle("~/bundles/underscore").Include(
-                        "~/Scripts/underscore*"));
+                        "~/Scripts/ref/underscore*"));
 
             bundles.Add(new ScriptBundle("~/bundles/backbone").Include(
-                        "~/Scripts/backbone*"));
+                        "~/Scripts/ref/backbone*"));
 
             bundles.Add(new ScriptBundle("~/bundles/clientSideMVC").Include(
                     "~/Scripts/models/*.js",
-                    "~/Scripts/views/*.js"));
+                    "~/Scripts/views/*.js",
+                    "~/Scripts/routers/*.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/site.js").Include(
                     "~/Scripts/_site.js"));

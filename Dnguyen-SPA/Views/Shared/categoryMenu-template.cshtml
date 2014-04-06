@@ -9,14 +9,28 @@
 
 
   <!--This renders the Category Menus from the client-model-->
-<script type="text/template" id="category-template">
+<script type="text/template" id="categoryMenu-template">
+    
 
     <div class="container">
         <ul class="nav nav-pills nav-justified">
+            <% //debugger; %>
             <% _.each(fetched_categories, function(category)  { %>
-                <li><a href="#"><%= category.displayName %></a></li>
+                <% 
+                    //Here we create a variable named URL so we can dynamically create the href url
+                    var url = "#/" + category.shortName; 
+                %>
+                <li><a href='<%= url %>'><%= category.displayName %></a></li>
             <% }); %>
         </ul>
     </div>
 
 </script>
+
+@*
+Instead of 
+<%= category.displayName %>,
+
+you can also use the .get() method
+<%= category.get("displayName") %>
+*@

@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ArticlesService.cs" />
     <Compile Include="EndPoints.cs" />
+    <Compile Include="JsonResponses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

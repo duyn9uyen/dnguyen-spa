@@ -33,12 +33,12 @@
             <ul class="nav nav-pills pull-right">
                 <li><a href="#">Duy Nguyen</a></li>
             </ul>
-            <h3 class="text-muted">&nbsp</h3>
+            <h3 class="text-muted">&nbsp;</h3>
         </div>
 
         @*-- Jumbotron Banner --*@
         <div class="jumbotron">
-            <h2>CAPTECH.IO NEWS</h2>
+            <h2><a href="~/">CAPTECH.IO NEWS</a></h2>
             <p class="~lead">@DateTime.Today.ToString("dddd, MMMM dd, yyyy")</p>
         </div>
 
@@ -54,8 +54,8 @@
             </ul>
         </div>*@
 
-        @*-- Consumed by CategoryView.js --*@
-        <div id="categorty-container"></div>
+        @*-- Here we build dynamically Category Menus.  This is Consumed by CategoryView.js --*@
+        <div id="categoryMenu-container"></div>
 
         @*-- Content Page --*@
         @RenderBody()
@@ -67,7 +67,9 @@
     </div> <!-- /container -->
     
     @*We move Underscore template files into a separate partial file for organizational purposes*@
-    @Html.Partial("category-template")
+    @Html.Partial("categoryMenu-template")
+    @Html.Partial("content-template")
+    @Html.Partial("home-template")
 
 </body>
 </html>

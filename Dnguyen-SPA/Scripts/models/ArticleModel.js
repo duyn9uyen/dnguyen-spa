@@ -1,11 +1,12 @@
 ﻿$(function () {
 
     ArticleModel = Backbone.Model.extend({
-        urlRoot: 'http://html5news.herokuapp.com/articles',
+        urlRoot: 'http://html5news.herokuapp.com/articles/',
+        url:    'http://html5news.herokuapp.com/articles/',
         defaults: function () {
             return {
                 id: -1,
-                headline: null,
+                headLine: null,
                 snippet: null,
                 fullStory: null,
                 location: null,
@@ -14,8 +15,10 @@
                 relatedArticles: null
             }
         },
-        initialize: function () {
-            //alert("Welcome to articles");
+        initialize: function (id) {
+            if (id) {
+                this.url += id;
+            }
         }
     });
 
@@ -24,4 +27,20 @@
         model: ArticleModel
     });
 
+
+    ArticlesByCategoryModel = Backbone.Collection.extend({
+        url: "http://html5news.herokuapp.com/category/",
+        model: ArticleModel,
+        defaults: function () {
+            return {
+                main: null,
+                aside: null,
+            }
+        },
+        initialize: function (id) {
+            if (id) {
+                this.url += id;
+            }
+        }
+    });
 });

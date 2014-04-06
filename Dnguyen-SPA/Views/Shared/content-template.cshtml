@@ -8,15 +8,14 @@
 -->
 
 
-  <!--This renders the Category Menus from the client-model-->
-<script type="text/template" id="category-template">
-
+<script type="text/template" id="content-template">
     <div class="container">
         <ul class="nav nav-pills nav-justified">
-            <% _.each(fetched_categories, function(category)  { %>
-                <li><a href="#"><%= category.displayName %></a></li>
+            <p>This is from the: content-template</p>
+            <% //debugger; %>
+            <% _.each(fetched_content, function(content)  { %>
+                <li><%= content.aside.headLine %></li>
             <% }); %>
         </ul>
     </div>
-
 </script>
