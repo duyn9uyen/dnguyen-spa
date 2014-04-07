@@ -10,3 +10,39 @@
     padding-top: 5px;
 }
 
+.centerHeader {
+    text-align: center;
+    border-bottom-color: #e5e5e5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.expandableDiv {
+    height:100px;
+    /*css3 transition*/
+    transition:height 1s;
+}
+
+.makeHidden {
+    visibility:hidden
+}
+
+.expandableDiv:hover
+{
+    height:175px;
+}
+
+.expandableDiv:hover .makeHidden {
+    visibility:visible;
+}
+
+.bannerText {
+    text-align: center;
+    font-size: 18px;
+}
+
+.bannerTextSub {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+}

@@ -1,0 +1,40 @@
+﻿<!--        We are using underscore.js templating
+        http://underscorejs.org/#template     
+-->
+
+<!--    Template functions can both interpolate variables, using <%= … %>, 
+        as well as execute arbitrary JavaScript code, with <% … %>. 
+        If you wish to interpolate a value, and have it be HTML-escaped, use <%- … %>
+-->
+
+
+<script type="text/template" id="banner-template">
+    @*<h4><%= fetched_banners.message %></h4>*@
+
+    <% _.each(fetched_banners, function(banner, idx)  { %>
+    
+        <% if (idx == 0) { %>
+            <div class="row">
+                <div class="col-md-12">
+                    <span style="padding-left: 790px"><small>Click to expand</small></span>
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 bannerText">
+                    <span><%= banner.message %></span>
+                </div>
+            </div>
+        <% } %>
+
+        <% if (idx == 1) { %>
+             <div class="row">
+                <div class="col-md-12 bannerTextSub">
+                    <div class="makeHidden"><%= banner.message %></div>
+                </div>
+            </div>
+        <% } %>
+
+    <% }); %>
+</script>
+

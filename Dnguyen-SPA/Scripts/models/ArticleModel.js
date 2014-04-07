@@ -1,7 +1,7 @@
 ﻿$(function () {
 
     ArticleModel = Backbone.Model.extend({
-        urlRoot: 'http://html5news.herokuapp.com/articles/',
+        //urlRoot: 'http://html5news.herokuapp.com/articles/',
         url:    'http://html5news.herokuapp.com/articles/',
         defaults: function () {
             return {

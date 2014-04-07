@@ -19,6 +19,7 @@
 
         var category_View = new CategoryView();
         var home_View = new HomeView();
+        var banner_View = new BannerView();
     });
 
     router.on('route:world', function () {

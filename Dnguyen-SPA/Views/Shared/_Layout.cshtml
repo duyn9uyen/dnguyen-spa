@@ -36,8 +36,8 @@
             <h3 class="text-muted">&nbsp;</h3>
         </div>
 
-        @*-- Jumbotron Banner --*@
-        <div class="jumbotron">
+        @*-- Center Header --*@
+        <div class="centerHeader">
             <h2><a href="~/">CAPTECH.IO NEWS</a></h2>
             <p class="~lead">@DateTime.Today.ToString("dddd, MMMM dd, yyyy")</p>
         </div>
@@ -57,6 +57,9 @@
         @*-- Here we build dynamically Category Menus.  This is Consumed by CategoryView.js --*@
         <div id="categoryMenu-container"></div>
 
+        @*-- Banner --*@
+        <div class="~jumbotron well expandableDiv" id="banner-container"></div>
+
         @*-- Content Page --*@
         @RenderBody()
 
@@ -70,6 +73,7 @@
     @Html.Partial("categoryMenu-template")
     @Html.Partial("content-template")
     @Html.Partial("home-template")
+    @Html.Partial("banner-template")
 
 </body>
 </html>

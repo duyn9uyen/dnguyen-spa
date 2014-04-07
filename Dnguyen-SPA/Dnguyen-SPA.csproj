@@ -201,6 +201,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\models\BannerModel.js" />
     <Content Include="Scripts\ref\backbone.js" />
     <Content Include="Scripts\ref\backbone.min.js" />
     <Content Include="Scripts\ref\backbone.min.map" />
@@ -219,6 +220,7 @@
     <Content Include="Scripts\ref\modernizr-2.7.2.js" />
     <Content Include="ReadMe.txt" />
     <Content Include="Scripts\routers\routers.js" />
+    <Content Include="Scripts\views\BannerView.js" />
     <Content Include="Scripts\views\WorldCategoryView.js" />
     <Content Include="Scripts\_site.js" />
     <Content Include="Scripts\ref\underscore.js" />
@@ -256,6 +258,7 @@
     <Content Include="Views\Shared\categoryMenu-template.cshtml" />
     <Content Include="Views\Shared\content-template.cshtml" />
     <Content Include="Views\Shared\home-template.cshtml" />
+    <Content Include="Views\Shared\banner-template.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
