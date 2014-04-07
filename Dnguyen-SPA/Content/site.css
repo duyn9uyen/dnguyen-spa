@@ -24,16 +24,23 @@
 }
 
 .makeHidden {
-    visibility:hidden
+    display:none;
 }
 
 .expandableDiv:hover
 {
+    /*display cursor as a hand*/
+    cursor: pointer; 
+}
+
+.expandableDiv-expand
+{
     height:175px;
 }
 
-.expandableDiv:hover .makeHidden {
-    visibility:visible;
+.expandableDiv-collapse
+{
+    height:100px;
 }
 
 .bannerText {

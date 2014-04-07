@@ -1,7 +1,22 @@
-﻿// Global Js file
-
+﻿
 $(function () {
+    var clickArea = $('#banner-container');
+    clickArea.on('click', function () {
+        var $div = $('.expandableDiv');
+        var expand = 'expandableDiv-expand';
+        var collapse = 'expandableDiv-collapse';
 
-    //var category_View = new CategoryView();
+        // collapse
+        if ($div.hasClass(expand)) {
+            $div.removeClass(expand);
+            $div.addClass(collapse);
+            $('.makeHidden').hide(0);
+        }
+        else { //expand
+            $div.removeClass(collapse);
+            $div.addClass(expand);
+            $('.makeHidden').delay(500).show(0);
+        }
 
+    });
 });
