@@ -12,7 +12,7 @@
 <script type="text/template" id="categoryMenu-template">
     
 
-    <div class="container">
+    <nav class="container cateogryStyle">
         <ul class="nav nav-pills nav-justified">
             <% //debugger; %>
             <% _.each(fetched_categories, function(category)  { %>
@@ -23,7 +23,7 @@
                 <li><a href='<%= url %>'><%= category.displayName %></a></li>
             <% }); %>
         </ul>
-    </div>
+    </nav>
 
 </script>
 

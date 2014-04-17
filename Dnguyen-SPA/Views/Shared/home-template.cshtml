@@ -10,12 +10,152 @@
 
 <script type="text/template" id="home-template">
     <div class="container">
-        <ul class="nav nav-pills nav-justified">
-            <p>This is from the: home-template</p>
-            <% //debugger; %>
-            <% _.each(fetched_content, function(content)  { %>
-                <li><%= content.headLine %></li>
-            <% }); %>
-        </ul>
+        <span>This is from the: home-template</span>
+
+        <div class="row">
+            <aside class="col-md-2" id="asideCol">
+                <% //debugger; %>
+                <% _.each(aside, function(article, idx)  { %>
+                    <article>
+                        <span class="aside-Title"><%= article.headLine %></span>
+                        <br />
+                        <span class="articleLocation"><%= article.location.toUpperCase() %></span>
+                        <span class="aside-snippet"><%= article.snippet %></span>
+                    
+                        <% if(idx < _.size(aside)) { %>
+                            <hr>
+                        <% } %>
+                    </article>
+                <% }); %>
+            </aside>
+            <section class="col-md-5" id="mainCol">
+                <% _.each(main, function(article, idx)  { %>
+                    <article>
+                        <% if(article.hasVideoPlaceholder == true) { %>
+                            <video width="320" height="240" controls>
+                              <source src="#" type="video/mp4">
+                              <source src="#" type="video/ogg">
+                              Your browser does not support the video tag.
+                            </video>
+                        <% } %>
+
+                        <% // -- Check for images here -- %>
+                        <% 
+	                        var cssClass;
+	                        if(article.numberOfImages > 0) {
+		                        cssClass = 'col-md-8';
+	                        }
+	                        else {
+		                        cssClass = 'col-md-12';
+	                        }
+                        %>
+
+                        <div class="row imagePlaceHolderRow">
+                            <div class= '<%=cssClass %>' >
+                                <p class="main-title"><%= article.headLine %></p>
+                            </div>
+                            <% if(article.numberOfImages > 0) { %>
+                                <div class="col-md-4 imagePlaceHolder">
+                                    <% for (var i=0; i < article.numberOfImages; i++){ %>
+                                        <span>PHOTO</span>
+                                    <% } %>
+                                </div>
+                            <% } %>
+                        </div>
+                            
+                        <span class="articleLocation"><%= article.location.toUpperCase() %></span>
+                        <span class="main-snippet"><%= article.snippet %></span>
+                        <% if(article.nsfw == true) { %>
+                            <span>[NSFW]</span> 
+                        <% } %>
+
+                        <% if(idx < _.size(aside)) { %>
+                            <hr>
+                        <% } %>
+                    </article>
+                <% }); %>
+            </section>
+            <section class="col-md-5" id="opinionTravelCol">
+                <div class="row">
+                    <div class="opinionHeaderTitle">The Opinion Pages</div>
+                    <% _.each(opinion, function(article, idx)  { %>
+                        <% if(idx == 0) { %>
+                            <div class="col-md-6">
+                                <article>
+                                    <span class="opinion-title"><%= article.headLine %></span>
+                                    <br />
+                                    <span class="articleLocation"><%= article.location.toUpperCase() %></span>
+                                    <span class="opinion-snippet"><%= article.snippet %></span>
+                                </article>
+                            </div>
+                        <% } %>
+                       <% if(idx == 1) { %>
+                            <div class="col-md-6">
+                                <article>
+                                    <span class="opinion-title"><%= article.headLine %></span>
+                                    <br />
+                                    <span class="articleLocation"><%= article.location.toUpperCase() %></span>
+
+                                    <% // -- Check for images here -- %>
+                                    <% if(article.numberOfImages > 0) { %>
+                                        <%= article.snippet.replace("<br><br>", "<div class='imagePlaceHolder'>PHOTO</div>") %>
+                                    <% } else { %>
+                                        <span class="opinion-snippet"><%= article.snippet %></span>
+                                    <% } %>
+                                    
+                                </article>
+                            </div>
+                       <% } %>
+                     <% }); %>
+                </div>
+                <div class="row padding-top">
+                    <div class="travelTitle">Travel</div>
+                    <% _.each(travel, function(article, idx)  { %>
+                        <% if(idx == 0) { %>
+                            <div class="col-md-6">
+                                <article>
+                                    <span class="articleTitle article-main"><%= article.headLine %></span>
+                                    
+                                    <% // -- Check for images here -- %>
+                                    <% if(article.numberOfImages > 0) { %>
+                                        <% for (var i=0; i < article.numberOfImages; i++){ %>
+                                            <div class="imagePlaceHolder">
+                                                <span>PHOTO</span>
+                                            </div>
+                                        <% } %>
+                                    <% } %>
+
+                                    <span class="articleLocation"><%= article.location.toUpperCase() %></span>
+                                    <%= article.fullStory %>
+                                    
+                                </article>
+                            </div>
+                        <% } %>
+                       <% if(idx == 1) { %>
+                            <div class="col-md-6">
+                                <article>
+                                    <span class="articleTitle article-main"><%= article.headLine %></span>
+                                    
+                                    <% // -- Check for images here -- %>
+                                    <% if(article.numberOfImages > 0) { %>
+                                        <% for (var i=0; i < article.numberOfImages; i++){ %>
+                                            <div class="imagePlaceHolder">
+                                                <span>PHOTO</span>
+                                            </div>
+                                        <% } %>
+                                    <% } %>
+
+                                    <span class="articleLocation"><%= article.location.toUpperCase() %></span>
+                                    <%= article.fullStory %>
+                                    
+                                </article>
+                            </div>
+                       <% } %>
+                     <% }); %>
+                </div>
+            </section>
+        </div>
+
+
     </div>
 </script>

@@ -9,13 +9,46 @@
 
 
 <script type="text/template" id="content-template">
+    <p>This is from the: content-template</p>
+    <% //debugger; %>
     <div class="container">
-        <ul class="nav nav-pills nav-justified">
-            <p>This is from the: content-template</p>
-            <% //debugger; %>
-            <% _.each(fetched_content, function(content)  { %>
-                <li><%= content.aside.headLine %></li>
-            <% }); %>
-        </ul>
-    </div>
+        <div class="row">
+            <div class="col-md-7" id="mainCol">
+                <% _.each(fetched_content, function(content)  { %>
+                    <h2><%= content.main.headLine %></h2>
+
+                <% // -- Check for images here -- %>
+                <% if(content.main.numberOfImages > 0) { %>
+                    <% for (var i=0; i < content.main.numberOfImages; i++){ %>
+                        <div class="imagePlaceHolder imagePlaceHolderBig">
+                            <span>PHOTO</span>
+                        </div>
+                    <% } %>
+                <% } %>
+
+                    <br />
+                    <p>
+                        <%= content.main.location.toUpperCase() %>
+                        <%= content.main.fullStory %>
+                    </p>
+                <% }); %>
+            </div>
+            <aside class="col-md-5" id="asideCol">
+                <% _.each(fetched_content, function(content)  { %>
+                    <h4><%= content.aside.headLine %></h4>
+                    <br />
+                    <p>
+                        <%= content.aside.location.toUpperCase() %>
+                        <%= content.aside.fullStory %>
+
+                        <% // -- Check for images here -- %>
+                        <% if(content.aside.numberOfImages > 0) { %>
+                            <%= content.aside.fullStory.replace("<br>", "<div class='imagePlaceHolder'>PHOTO</div>") %>
+                        <% } else { %>
+                            <%= content.aside.fullStory %>
+                        <% } %>
+                    </p>
+                <% }); %>
+            </aside>
+        </div>
 </script>

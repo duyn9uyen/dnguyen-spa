@@ -1,15 +1,23 @@
 ﻿$(function () {
 
-    var id = 1;
-    var articlesByCat = new ArticlesByCategoryModel(id);
+    var categoryId;
 
-    WorldCategoryView = Backbone.View.extend({
+    //var articlesByCat = new ArticlesByCategoryModel(1);
+    var articlesByCat;
+
+    ContentCategoryView = Backbone.View.extend({
 
         el: $("#content-container"),
 
         template: _.template($('#content-template').html()),
 
-        initialize: function () {
+        initialize: function (options) {
+            //get the categoryId
+            categoryId = options.id;
+
+            //dynamically get the collection of articles
+            articlesByCat = new ArticlesByCategoryModel(categoryId);
+
             var self = this;
             articlesByCat.fetch({ success: function () { self.render(); } });
         },

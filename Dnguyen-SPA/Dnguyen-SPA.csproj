@@ -202,6 +202,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Scripts\models\BannerModel.js" />
+    <Content Include="Scripts\models\FeaturedArticles.js" />
     <Content Include="Scripts\ref\backbone.js" />
     <Content Include="Scripts\ref\backbone.min.js" />
     <Content Include="Scripts\ref\backbone.min.map" />
@@ -221,7 +222,7 @@
     <Content Include="ReadMe.txt" />
     <Content Include="Scripts\routers\routers.js" />
     <Content Include="Scripts\views\BannerView.js" />
-    <Content Include="Scripts\views\WorldCategoryView.js" />
+    <Content Include="Scripts\views\ContentCategoryView.js" />
     <Content Include="Scripts\_site.js" />
     <Content Include="Scripts\ref\underscore.js" />
     <Content Include="Scripts\ref\underscore.min.js" />

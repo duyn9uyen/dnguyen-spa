@@ -19,27 +19,41 @@
     @Scripts.Render("~/bundles/site.js")
 
     @RenderSection("scripts", required: false)
+    
+    @*-- Font Awesome --*@
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    @*-- Google Web Fonts --*@
+    <link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
 
 </head>
+
+    @*-- Utilizing HTML5 Semantic elements <section>, <article>, <nav>, <header>, <footer> and <aside>. --*@
 
 <body>
     <div class="container">
         @*-- Header Section --*@
-        <div class="header">
+        <header class="header topNav">
             <ul class="nav nav-pills pull-left">
-                <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span> SECTIONS</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-search"></span> SEARCH</a></li>
+                @*using font-awesome icons*@
+                <li><a href="#"><i class="fa fa-bars"> SECTIONS</i></a></li>
+                <li><a href="#"><i class="fa fa-search"> SEARCH</i></a></li>
             </ul>
             <ul class="nav nav-pills pull-right">
-                <li><a href="#">Duy Nguyen</a></li>
+                <li>
+                    <a href="#">Duy Nguyen</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-gears"></i></a>
+                </li>
             </ul>
             <h3 class="text-muted">&nbsp;</h3>
-        </div>
+        </header>
 
         @*-- Center Header --*@
         <div class="centerHeader">
             <h2><a href="~/">CAPTECH.IO NEWS</a></h2>
-            <p class="~lead">@DateTime.Today.ToString("dddd, MMMM dd, yyyy")</p>
+            <p class="centerHeaderDate">@DateTime.Today.ToString("dddd, MMMM dd, yyyy")</p>
         </div>
 
         @*-- Category Menus --*@
@@ -63,9 +77,9 @@
         @*-- Content Page --*@
         @RenderBody()
 
-        <div class="footer">
-            <p>&copy; Captech HTML5 Challenge</p>
-        </div>
+        <footer class="footer">
+            <p>&copy; Captech HTML5 / BackBone.js-Underscore.js/ Single-Web-Application / Bootstrap Challenge</p>
+        </footer>
 
     </div> <!-- /container -->
     
