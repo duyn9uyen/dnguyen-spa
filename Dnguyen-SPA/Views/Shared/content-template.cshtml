@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-7" id="mainCol">
                 <% _.each(fetched_content, function(content)  { %>
-                    <h2><%= content.main.headLine %></h2>
+                    <span class="content-title"><%= content.main.headLine %></span>
 
                 <% // -- Check for images here -- %>
                 <% if(content.main.numberOfImages > 0) { %>
@@ -27,27 +27,23 @@
                 <% } %>
 
                     <br />
-                    <p>
                         <%= content.main.location.toUpperCase() %>
-                        <%= content.main.fullStory %>
-                    </p>
+                        <span class="content-content"><%= content.main.fullStory %></span>
                 <% }); %>
             </div>
             <aside class="col-md-5" id="asideCol">
                 <% _.each(fetched_content, function(content)  { %>
-                    <h4><%= content.aside.headLine %></h4>
+                    <span class="related-title"><%= content.aside.headLine %></span>
                     <br />
-                    <p>
-                        <%= content.aside.location.toUpperCase() %>
-                        <%= content.aside.fullStory %>
+                    <%= content.aside.location.toUpperCase() %>
+                    <span class="related-content"><%= content.aside.fullStory %></span>
 
-                        <% // -- Check for images here -- %>
-                        <% if(content.aside.numberOfImages > 0) { %>
-                            <%= content.aside.fullStory.replace("<br>", "<div class='imagePlaceHolder'>PHOTO</div>") %>
-                        <% } else { %>
-                            <%= content.aside.fullStory %>
-                        <% } %>
-                    </p>
+                    <% // -- Check for images here -- %>
+                    <% if(content.aside.numberOfImages > 0) { %>
+                        <span class="related-content"><%= content.aside.fullStory.replace("<br>", "<div class='imagePlaceHolder'>PHOTO</div>") %></span>
+                    <% } else { %>
+                        <span class="related-content"><%= content.aside.fullStory %></span>
+                    <% } %>
                 <% }); %>
             </aside>
         </div>

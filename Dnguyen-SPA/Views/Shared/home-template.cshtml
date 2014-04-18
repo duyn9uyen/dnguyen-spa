@@ -109,12 +109,12 @@
                      <% }); %>
                 </div>
                 <div class="row padding-top">
-                    <div class="travelTitle">Travel</div>
+                    <div class="travelHeaderTitle">Travel</div>
                     <% _.each(travel, function(article, idx)  { %>
                         <% if(idx == 0) { %>
                             <div class="col-md-6">
                                 <article>
-                                    <span class="articleTitle article-main"><%= article.headLine %></span>
+                                    <span class="travel-title article-main"><%= article.headLine %></span>
                                     
                                     <% // -- Check for images here -- %>
                                     <% if(article.numberOfImages > 0) { %>
@@ -126,7 +126,7 @@
                                     <% } %>
 
                                     <span class="articleLocation"><%= article.location.toUpperCase() %></span>
-                                    <%= article.fullStory %>
+                                    <span class="travel-snippet"><%= article.snippet %></span>
                                     
                                 </article>
                             </div>
@@ -134,7 +134,7 @@
                        <% if(idx == 1) { %>
                             <div class="col-md-6">
                                 <article>
-                                    <span class="articleTitle article-main"><%= article.headLine %></span>
+                                    <span class="travel-title article-main"><%= article.headLine %></span>
                                     
                                     <% // -- Check for images here -- %>
                                     <% if(article.numberOfImages > 0) { %>
@@ -146,7 +146,7 @@
                                     <% } %>
 
                                     <span class="articleLocation"><%= article.location.toUpperCase() %></span>
-                                    <%= article.fullStory %>
+                                    <span class="travel-snippet"><%= article.snippet %></span>
                                     
                                 </article>
                             </div>

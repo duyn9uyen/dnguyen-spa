@@ -1,7 +1,7 @@
 ﻿/* Customize container */
 @media (min-width: 768px) {
     .container {
-        max-width: 960px;
+        max-width: 960pt;
     }
 }
 
@@ -54,6 +54,60 @@ body {
 
 .topNav {
     font-size: 9pt;
+}
+
+.expandableDiv {
+    height:100px;
+    /*css3 transition*/
+    transition:height 1s;
+}
+
+.expandableDiv:hover
+{
+    /*display cursor as a hand*/
+    cursor: pointer; 
+}
+
+.expandableDiv-expand
+{
+    height:175px;
+}
+
+.expandableDiv-collapse
+{
+    height:100px;
+}
+
+.cateogryStyle {
+    font-size: 14pt;
+    color: #333333;
+}
+
+.centerHeaderDate {
+    font-size: 14pt;
+    color: #333333;
+}
+
+.centerHeader {
+    text-align: center;
+    border-bottom-color: #e5e5e5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+.bannerText {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bannerTextSub {
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 30px;
 }
 
 .articleLocation {
@@ -113,6 +167,14 @@ section article p.main-title  {
     color: #333333;
 }
 
+section article:first-of-type span.opinion-title  {
+    font-style: italic;
+    font-size: 12pt;
+    line-height: 15pt;
+    color: #333333;
+    font-weight: normal;
+}
+
 .opinion-title {
     font-style: italic;
     font-size: 12pt;
@@ -129,70 +191,82 @@ section article p.main-title  {
 
 /*#endregion*/
 
+/*#region travel*/
 
-
-
-
-.travelTitle {
+.travelHeaderTitle {
     text-align: left;
-    font-size: 14pt;
+    font-size: 12pt;
+    line-height: 15pt;
     font-weight: bold;
+    font-style: italic;
     border-bottom: 3px dotted black;
 }
 
-.centerHeaderDate {
-    font-size: 14pt;
+section article:first-of-type span.travel-title  {
+    font-style: italic;
+    font-size: 12pt;
+    line-height: 15pt;
     color: #333333;
-}
-
-.centerHeader {
-    text-align: center;
-    border-bottom-color: #e5e5e5;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    font-size: 36pt;
     font-weight: bold;
 }
 
-.expandableDiv {
-    height:100px;
-    /*css3 transition*/
-    transition:height 1s;
-}
-
-.expandableDiv:hover
-{
-    /*display cursor as a hand*/
-    cursor: pointer; 
-}
-
-.expandableDiv-expand
-{
-    height:175px;
-}
-
-.expandableDiv-collapse
-{
-    height:100px;
-}
-
-.cateogryStyle {
-    font-size: 14pt;
-    color: #333333;
-}
-
-
-.bannerText {
-    text-align: center;
-    font-size: 18pt;
+.travel-title {
+    font-size: 12pt;
+    line-height: 15pt;
     font-weight: bold;
     font-style: italic;
 }
 
-.bannerTextSub {
-    text-align: center;
-    font-size: 12pt;
-    margin-top: 30px;
+.travel-snippet {
+    font-size: 10pt;
+    line-height: 15pt;
+    color: #333333;
 }
+
+/*#endregion*/
+
+/*#region Content*/
+
+.content-title {
+    text-align: left;
+    font-size: 26pt;
+    line-height: 28pt;
+     color: #333333;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.content-content {
+    font-size: 10pt;
+    line-height: 15pt;
+    color: #333333;
+    font-weight: normal;
+}
+
+
+/*#endregion*/
+
+/*#region related*/
+
+.related-title {
+    text-align: left;
+    font-size: 16pt;
+    line-height: 18pt;
+     color: #333333;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.related-content {
+    font-size: 12pt;
+    line-height: 15pt;
+    color: #666666;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*#endregion*/
+
+
 
 /*#endregion*/
