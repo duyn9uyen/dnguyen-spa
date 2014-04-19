@@ -1,8 +1,6 @@
 ﻿$(function () {
 
     var categoryId;
-
-    //var articlesByCat = new ArticlesByCategoryModel(1);
     var articlesByCat;
 
     ContentCategoryView = Backbone.View.extend({

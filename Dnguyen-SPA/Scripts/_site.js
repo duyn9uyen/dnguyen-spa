@@ -1,4 +1,5 @@
-﻿
+﻿//This script is for the expandable banner. We use css3 classes to expand.
+
 $(function () {
     var clickArea = $('#banner-container');
     clickArea.on('click', function () {

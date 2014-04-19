@@ -18,13 +18,11 @@
 
         render: function () {
             // Load the compiled HTML into the Backbone "el"
-
             this.$el.html(this.template({ fetched_categories: categories.toJSON() }));
 
             //or you can do it this way
             //var data = this.template({ fetched_categories: categories.toJSON()});
             //this.$el.html(data);
-
 
             return this;
         }

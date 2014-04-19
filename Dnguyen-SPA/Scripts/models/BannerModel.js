@@ -1,8 +1,5 @@
-﻿/// <reference path="/backbone.js" />
-/// <reference path="/jquery-1.10.2.js" />
-/// <reference path="/underscore.js" />
+﻿$(function () {
 
-$(function () {
     BannerModel = Backbone.Model.extend({
         defaults: function () {
             return {

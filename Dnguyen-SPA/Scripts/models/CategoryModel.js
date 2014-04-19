@@ -9,7 +9,7 @@
             }
         },
         initialize: function () {
-            //alert("Welcome to this world");
+            //alert("Hello World");
         }
     });
 

@@ -1,8 +1,4 @@
-﻿/// <reference path="/backbone.js" />
-/// <reference path="/jquery-1.10.2.js" />
-/// <reference path="/underscore.js" />
-
-$(function () {
+﻿$(function () {
     FeaturedArticlesModel = Backbone.Model.extend({
         defaults: function () {
             return {

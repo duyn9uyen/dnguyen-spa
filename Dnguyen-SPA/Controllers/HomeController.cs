@@ -17,45 +17,7 @@ namespace Dnguyen_SPA.Controllers
         // GET: /Home/
         public ActionResult Index()
         {
-            var model = new IndexViewModel();
-
-            model.Categories = GetAllCategories();
-            model.Articles = GetAllArticles();
-            model.FeaturedArticles = GetFeaturedArticles();
-            model.Banners = GetAllBanners();
-            // Do don't actually do anything with view model data.
-            // Leaving in for debugging connection to services.
-            return View(model);
-
-            //return View();
-        }
-
-        private List<Category> GetAllCategories()
-        {
-            var service = new ArticlesService();
-            var jsonResponse = service.GetAllCategories();
-            return PocoJsonSerializer.BuildListOfPocosFromJson<Category>(jsonResponse);
-        }
-
-        private List<Article> GetAllArticles()
-        {
-            var service = new ArticlesService();
-            var jsonResponse = service.GetAllArticles();
-            return PocoJsonSerializer.BuildListOfPocosFromJson<Article>(jsonResponse);
-        }
-
-        private List<Featured> GetFeaturedArticles()
-        {
-            var service = new ArticlesService();
-            var jsonResponse = service.GetAllArticles();
-            return PocoJsonSerializer.BuildListOfPocosFromJson<Featured>(jsonResponse);
-        }
-
-        private List<Banner> GetAllBanners()
-        {
-            var service = new ArticlesService();
-            var jsonResponse = service.GetAllBanners();
-            return PocoJsonSerializer.BuildListOfPocosFromJson<Banner>(jsonResponse);
+           return View();
         }
 	}
 }
