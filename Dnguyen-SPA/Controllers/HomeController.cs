@@ -1,13 +1,4 @@
-﻿using Dnguyen_SPA.Json;
-using Dnguyen_SPA.POCOs;
-using Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Script.Serialization;
-using Dnguyen_SPA.Models;
+﻿using System.Web.Mvc;
 
 namespace Dnguyen_SPA.Controllers
 {

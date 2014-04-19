@@ -27,7 +27,6 @@ C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\System.Web.Helpers.xml
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\System.Web.Mvc.xml
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\obj\Debug\Dnguyen-SPA.dll
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\obj\Debug\Dnguyen-SPA.pdb
-C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\obj\Debug\Dnguyen-SPA.csprojResolveAssemblyReference.cache
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\System.Net.Http.Formatting.dll
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\System.Web.Http.dll
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\System.Web.Http.WebHost.dll
@@ -36,6 +35,4 @@ C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\System.Web.Http.xml
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\System.Web.Http.WebHost.xml
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\AutoMapper.Net4.dll
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\AutoMapper.dll
-C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\Services.dll
-C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\Services.pdb
 C:\Projects\Captech\Dnguyen-SPA\Dnguyen-SPA\bin\AutoMapper.xml
