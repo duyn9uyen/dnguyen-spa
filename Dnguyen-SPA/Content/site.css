@@ -62,7 +62,7 @@ body {
     transition:height 1s;
 }
 
-.expandableDiv:hover
+.clickExpandArea:hover
 {
     /*display cursor as a hand*/
     cursor: pointer; 
