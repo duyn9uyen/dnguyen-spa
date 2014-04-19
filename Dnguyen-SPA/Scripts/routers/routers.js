@@ -1,4 +1,6 @@
-﻿$(function () {
+﻿//This is the entry point of the application
+
+$(function () {
 
     var Router = Backbone.Router.extend({
 
